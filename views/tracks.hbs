@@ -1,0 +1,14 @@
+<nav>
+    Tracks for {{items.0.artists.0.name}}
+</nav>
+<div class="tracks">  
+    {{#each items}}
+        <div class="trackItem">
+            <strong>{{name}}</strong>
+            <audio 
+                controls
+                src={{preview_url}}
+            />  
+        </div>
+    {{/each}}
+</div>   

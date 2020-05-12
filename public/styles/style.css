@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.home {
+    height: calc(100vh - 3.3em);
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background: url('/images/spotify-background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#white-background {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    min-width: 20%;
+    padding: 3em;
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    border-radius: 4px;
+}
+
+form input {
+    margin: 0.5em;
+}
+
+form input:first-child {
+    width: 80%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-size: 1.5em;
+
+    padding: 0.5em 0 0.5em 1em;
+    background-color: rgb(39,41,45);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.cardItem {
+    background-color: rgba(39,41,45,0.1);
+    border-radius: 4px;
+
+    text-align: center;
+
+    width: 90%;
+    margin: 1em;
+    padding: 0.5em 0;
+    height: 12em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    justify-items: center;
+    align-items: center;
+}
+
+.cardItem img {
+    height: 7em;
+}
+
+.cardItem a {
+    text-decoration: none;
+}
+
+.tracks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.trackItem {
+    background-color: rgba(39,41,45,0.1);
+    border-radius: 4px;
+
+    text-align: center;
+
+    width: 90%;
+    margin: 1em;
+    padding: 0.5em 0;
+    height: 5em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    justify-items: center;
+    align-items: center;
+}
